@@ -28,9 +28,10 @@ test('export quotes prompts, preserves exact u64 seeds and Colab forms, and clea
   assert.match(code(result), /^SEED = 18446744073709551615  # @param \{type:"integer"\}$/m);
   assert.doesNotMatch(code(result), /files\.upload\(\)/u);
   assert.equal(dirtyTemplate.cells[1].execution_count, 7);
-  assert.equal(result.metadata.colab.name, 'gooblelab-my-minimax-video.ipynb');
-  assert.equal(fileStem('../../ Cool: Video?'), 'gooblelab-cool-video');
-  assert.equal(fileStem('竹林'), 'gooblelab');
+  assert.equal(result.metadata.colab.name, 'nooble-my-minimax-video.ipynb');
+  assert.equal(result.metadata.gooblelab.version, '0.2.0'); // Preserve the existing metadata schema.
+  assert.equal(fileStem('../../ Cool: Video?'), 'nooble-cool-video');
+  assert.equal(fileStem('竹林'), 'nooble');
   assert.deepEqual(result, buildNotebook({ ...config, prompt, seed: '18446744073709551615' }, dirtyTemplate, catalog));
   assert.equal(validate({ ...config, seed: '0000' }, catalog).seed, '0');
 });
@@ -46,9 +47,9 @@ test('image and reference exports ask for one image in Colab without leaking loc
     assert.ok(!JSON.stringify(result).includes('private-reference.webp'));
     const uploaded = code(buildNotebook(
       { ...config, template: templateName, presetId, imageName: 'private-reference.webp' },
-      template, catalog, '/content/drive/MyDrive/GoobleLab/reference.webp',
+      template, catalog, '/content/drive/MyDrive/Nooble/reference.webp',
     ));
-    assert.match(uploaded, /^INPUT_IMAGE = "\/content\/drive\/MyDrive\/GoobleLab\/reference.webp"  # @param/m);
+    assert.match(uploaded, /^INPUT_IMAGE = "\/content\/drive\/MyDrive\/Nooble\/reference.webp"  # @param/m);
     assert.doesNotMatch(uploaded, /files\.upload\(\)/u);
   }
   for (const path of ['C:\\private\\image.png', '/content/drive/MyDrive/../image.png',

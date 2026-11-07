@@ -1,8 +1,8 @@
-# GoobleLab browser builder
+# Nooble browser builder
 
-The browser is GoobleLab's primary interface. It prepares an editable MiniMax H3 notebook; generation runs in your own Google Colab account. The [core notebook](../MiniMax_H3_Colab.ipynb) also works directly. The [Windows v0.2.0 companion](DESKTOP.md) remains available as an optional legacy interface.
+The browser is Nooble's primary interface. It prepares an editable MiniMax H3 notebook; generation runs in your own Google Colab account. The [core notebook](../MiniMax_H3_Colab.ipynb) also works directly. The [Windows v0.2.0 companion](DESKTOP.md) remains available as an optional legacy interface.
 
-The [hosted preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) is owner-private and uses the hosting platform's ChatGPT sign-in gate. This does not implement GoobleLab subscription accounts. Local use below needs no hosting-platform sign-in.
+The [hosted preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) is owner-private and uses the hosting platform's ChatGPT sign-in gate. This does not implement Nooble subscription accounts. Local use below needs no hosting-platform sign-in.
 
 ## Run locally
 
@@ -15,6 +15,8 @@ python -m http.server 8765 --bind 127.0.0.1 --directory web/dist
 
 Open [the local builder](http://127.0.0.1:8765/). There are no npm dependencies. Rebuild after changing the browser files, notebook or preset catalog. Serve the generated directory over HTTP; opening `index.html` as a local file does not load its notebook resources reliably.
 
+The static build versions linked scripts, styles and notebook resources by content, so a refresh loads the updated builder rather than mixing cached releases.
+
 ## Build and download a notebook
 
 1. Choose **Template → Settings → Export / upload**. Free lets you edit the name and prompt for text-to-video using FL2VA Turbo 8, 1344×768, a requested 5 seconds and seed `12345`.
@@ -22,7 +24,7 @@ Open [the local builder](http://127.0.0.1:8765/). There are no npm dependencies.
 3. Click **Download .ipynb**. In Colab choose **File → Upload notebook**, select **A100 + high RAM**, and run Steps 1–5 in order. The plan shows the actual duration after H3 frame-count rounding; a requested 5 seconds produces about 5.17 seconds.
 4. Finish with Step 6's `STOP_BACKEND`, then disconnect and delete the Colab runtime. See the [main guide](../README.md#quick-start) for compute, storage and output locations.
 
-All exports retain the six editable code cells and Colab form annotations, with execution counts and outputs cleared. Settings remain editable in the notebook regardless of the browser plan. Downloading requires no Google connection in GoobleLab.
+All exports retain the six editable code cells and Colab form annotations, with execution counts and outputs cleared. Settings remain editable in the notebook regardless of the browser plan. Downloading requires no Google connection in Nooble.
 
 Image and reference workflows accept PNG, JPEG or WebP selections up to 25 MiB. A downloaded notebook includes neither the image nor a device path: Step 5 asks you to upload exactly one image into the Colab runtime. For Ref2VA, refer to it as `<Picture 1>` in your prompt. The experimental Ref2VA Turbo 4 preset was trained at 544p; try 960×544.
 
@@ -32,7 +34,7 @@ Custom LoRAs must match the selected H3 family. Use an HTTPS Hugging Face `.safe
 
 **Save project** keeps up to 20 configurations in this browser's local storage. Records contain names, prompts, settings and the selected image's filename. Image files, OAuth client IDs and Google access tokens are not saved with projects. Reselect an image before a Drive upload after reopening a project; downloaded notebooks can still ask for it inside Colab.
 
-Projects do not sync across devices or browser profiles. Clearing site data removes them. Download a notebook to keep a portable copy. Google tokens stay in page memory and are discarded on disconnect or when the page closes. There are no GoobleLab accounts, cloud project storage or billing in this preview.
+Projects do not sync across devices or browser profiles. Clearing site data removes them. Download a notebook to keep a portable copy. Google tokens stay in page memory and are discarded on disconnect or when the page closes. There are no Nooble accounts, cloud project storage or billing in this preview.
 
 ## Where data lives and how to remove it
 

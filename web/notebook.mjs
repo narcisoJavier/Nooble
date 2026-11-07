@@ -99,7 +99,7 @@ export function fileStem(name) {
     if (stem.length >= 80) break;
   }
   stem = stem.replace(/-+$/u, '');
-  return stem ? `gooblelab-${stem}` : 'gooblelab';
+  return stem ? `nooble-${stem}` : 'nooble';
 }
 
 function pythonString(value) {
@@ -144,9 +144,9 @@ export function buildNotebook(config, notebookTemplate, catalog, imageDrivePath 
     INPUT_IMAGE: pythonString(settings.template === 'text' ? '' : imageDrivePath ?? ''),
   })) setParameter(cells, name, value);
 
-  cells[0].source = [`# GoobleLab — ${settings.name}\n`, ...cells[0].source.slice(1)];
+  cells[0].source = [`# Nooble — ${settings.name}\n`, ...cells[0].source.slice(1)];
   if (settings.template !== 'text' && imageDrivePath === null) {
-    const fallback = '# Upload the image selected in GoobleLab; it stays in this Colab runtime.\n'
+    const fallback = '# Upload the image selected in Nooble; it stays in this Colab runtime.\n'
       + 'if not INPUT_IMAGE.strip():\n'
       + '    from google.colab import files\n'
       + '    uploaded = files.upload()\n'

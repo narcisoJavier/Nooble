@@ -1,6 +1,6 @@
 # Contributing
 
-GoobleLab is a notebook-builder preview, not a hosted generation service. Keep the editable notebook usable without the browser. Changes must preserve the distinction between offline checks and actual Colab results.
+Nooble is a notebook-builder preview, not a hosted generation service. Keep the editable notebook usable without the browser. Changes must preserve the distinction between offline checks and actual Colab results.
 
 ## Check a change
 

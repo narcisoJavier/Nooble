@@ -1,10 +1,12 @@
 # GoobleLab Windows companion
 
-The optional Rust desktop app builds configured MiniMax H3 notebooks. The [Colab notebook](https://colab.research.google.com/github/narcisoJavier/GoobleLab/blob/main/MiniMax_H3_Colab.ipynb) remains the core product and can be used directly.
+This documents the legacy v0.2.0 Windows companion, released as **GoobleLab**. **Nooble** is the current project name; the browser is its primary interface.
+
+The optional Rust desktop app builds configured MiniMax H3 notebooks. The [Colab notebook](https://colab.research.google.com/github/narcisoJavier/Nooble/blob/main/MiniMax_H3_Colab.ipynb) remains the core product and can be used directly.
 
 ## Download and run
 
-Download [GoobleLab-v0.2.0-windows-x64.zip](https://github.com/narcisoJavier/GoobleLab/releases/download/v0.2.0/GoobleLab-v0.2.0-windows-x64.zip) from the [v0.2.0 release](https://github.com/narcisoJavier/GoobleLab/releases/tag/v0.2.0), extract it, and run `gooblelab.exe`. The portable app prepares notebooks without a local GPU or Python installation. Generation runs on your Colab GPU.
+Download [GoobleLab-v0.2.0-windows-x64.zip](https://github.com/narcisoJavier/Nooble/releases/download/v0.2.0/GoobleLab-v0.2.0-windows-x64.zip) from the [v0.2.0 release](https://github.com/narcisoJavier/Nooble/releases/tag/v0.2.0), extract it, and run `gooblelab.exe`. The portable app prepares notebooks without a local GPU or Python installation. Generation runs on your Colab GPU.
 
 ## Template → Settings → Export & upload
 

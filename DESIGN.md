@@ -1,5 +1,5 @@
 ---
-name: GoobleLab
+name: Nooble
 description: A calm browser notebook studio with forest actions, cool surfaces and editorial headings.
 colors:
   accent: "#235d43"
@@ -148,7 +148,7 @@ components:
     size: "25px"
 ---
 
-# Design System: GoobleLab
+# Design System: Nooble
 
 ## Overview
 
@@ -294,7 +294,7 @@ This preserved system applies only to the optional Windows companion. Its yellow
 ### Legacy token snapshot
 
 ```yaml
-name: GoobleLab
+name: Nooble
 description: Native Windows controls on a warm, chrome-yellow notebook builder.
 colors:
   rail: "#f4c62a"

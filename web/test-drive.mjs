@@ -49,7 +49,7 @@ test('private folder and multipart uploads preserve image bytes and write its sa
     assert.equal(new URL(call.url).origin, 'https://www.googleapis.com');
   }
   const folder = JSON.parse(calls[0].options.body);
-  assert.match(folder.name, /^gooblelab-private-test-[0-9a-f-]{36}$/u);
+  assert.match(folder.name, /^nooble-private-test-[0-9a-f-]{36}$/u);
   assert.equal(folder.mimeType, 'application/vnd.google-apps.folder');
   assert.deepEqual(folder.parents, ['root']);
   assert.ok(!('permissions' in folder));

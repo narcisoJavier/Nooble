@@ -1,14 +1,14 @@
-# GoobleLab SaaS readiness
+# Nooble SaaS readiness
 
 Reviewed November 7, 2026. **Current decision: suitable for a private product preview; not ready to accept subscriptions.** This is an engineering and product assessment, not legal clearance. The browser and editable notebooks work as a configuration tool; a production SaaS remains to be built and validated.
 
 ## What we should sell
 
-GoobleLab helps creators prepare, reuse and maintain MiniMax H3 workflows for their own Colab account. Keep the notebook as the core output and the Free builder as a useful entry point. Pro should earn its price through maintained, tested workflows and repeat-use convenience.
+Nooble helps creators prepare, reuse and maintain MiniMax H3 workflows for their own Colab account. Keep the notebook as the core output and the Free builder as a useful entry point. Pro should earn its price through maintained, tested workflows and repeat-use convenience.
 
 More sliders alone are a weak subscription offer: exported notebooks are editable and the code is MIT licensed. That is expected open-source behavior, not a defect to hide. Test whether users repeatedly need curated workflow updates, cloud project history and reusable profiles before building a subscription around them. These proposed services do not exist yet. If repeat demand is absent, a paid workflow pack or support offering may fit better than recurring billing.
 
-Free means no GoobleLab charge. It does **not** mean free A100 access, free Drive storage or included GPU time. GoobleLab Pro and Google's Colab plans would be separate purchases. Do not advertise instant generation, guaranteed GPU availability, unlimited video, or LoRA training.
+Free means no Nooble charge. It does **not** mean free A100 access, free Drive storage or included GPU time. Nooble Pro and Google's Colab plans would be separate purchases. Do not advertise instant generation, guaranteed GPU availability, unlimited video, or LoRA training.
 
 ## What is wrong with treating the preview as a SaaS today
 
@@ -25,7 +25,7 @@ Free means no GoobleLab charge. It does **not** mean free A100 access, free Driv
 
 ## Platform and model launch constraints
 
-[Colab's additional terms](https://research.google.com/colaboratory/tos_v6.html) prohibit account sharing and providing third parties direct or indirect access to Colab. Sell the notebook-building service, not access to an operator's Colab runtime. [Colab's FAQ](https://research.google.com/colaboratory/faq.html) also limits free-runtime web-UI bypasses and does not guarantee resources. Keep execution interactive in each user's notebook; do not promise that a payment to GoobleLab buys Google compute. The exact commercial flow still needs review.
+[Colab's additional terms](https://research.google.com/colaboratory/tos_v6.html) prohibit account sharing and providing third parties direct or indirect access to Colab. Sell the notebook-building service, not access to an operator's Colab runtime. [Colab's FAQ](https://research.google.com/colaboratory/faq.html) also limits free-runtime web-UI bypasses and does not guarantee resources. Keep execution interactive in each user's notebook; do not promise that a payment to Nooble buys Google compute. The exact commercial flow still needs review.
 
 The [MiniMax H3 license](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE) excludes the EU, UK, Republic of Korea and US from its default territory, requires commercial attribution, and has an additional authorization threshold above US$20 million yearly revenue. Resolve applicability to the intended customers, distribution and hosting before public paid launch. Repository MIT licensing is separate; do not assume a notebook-only product automatically avoids model conditions.
 

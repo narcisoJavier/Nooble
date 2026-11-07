@@ -1,12 +1,14 @@
-# GoobleLab — MiniMax H3 notebook builder for Google Colab
+# Nooble — MiniMax H3 notebook builder for Google Colab
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/narcisoJavier/GoobleLab/blob/main/MiniMax_H3_Colab.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/narcisoJavier/Nooble/blob/main/MiniMax_H3_Colab.ipynb)
 
 Prepare editable **Google Colab** notebooks for AI video generation with sound using open-weight **MiniMax H3** and ComfyUI. Configure text-to-video, first-frame image-to-video or reference-image workflows, five model presets and compatible LoRAs. Generation runs in your own Colab account.
 
 **Status: private product preview, not a production paid SaaS.** Only the original Turbo 8 workflow at 864×480 has a recorded successful GPU run. The refactored runtime, 1344×768 default, other workflows and live browser Drive integration still need end-to-end validation. [SaaS assessment and launch gates](docs/SAAS.md) · [Contributing and release checks](CONTRIBUTING.md) · [Security reports](SECURITY.md)
 
-**The notebook is the core output.** The browser builder is GoobleLab's primary interface for preparing it, with a Free basic builder and a Pro customization preview. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
+**The notebook is the core output.** The browser builder is Nooble's primary interface for preparing it, with a Free basic builder and a Pro customization preview. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
+
+Previously named **GoobleLab**. The v0.2.0 Windows release retains its original ZIP and executable names. Existing browser projects and notebook metadata retain their legacy storage keys for compatibility; the hosted preview URL also stays the same.
 
 ## Browser builder preview
 
@@ -19,9 +21,9 @@ node web/build.mjs
 python -m http.server 8765 --bind 127.0.0.1 --directory web/dist
 ```
 
-Open [GoobleLab locally](http://127.0.0.1:8765/), enter a prompt, and download an editable notebook. Free uses the basic MiniMax H3 text-to-video defaults. **Preview Pro** unlocks image/reference workflows and advanced settings for evaluation; pricing, subscriptions and billing are not enabled. Projects stay in this browser, with no image files or Google tokens persisted.
+Open [Nooble locally](http://127.0.0.1:8765/), enter a prompt, and download an editable notebook. Free uses the basic MiniMax H3 text-to-video defaults. **Preview Pro** unlocks image/reference workflows and advanced settings for evaluation; pricing, subscriptions and billing are not enabled. Projects stay in this browser, with no image files or Google tokens persisted.
 
-Free refers to the builder, not included Google compute: this notebook targets an A100, high RAM and roughly 50 GB of storage. Suitable Colab resources and storage are your responsibility and may cost money. A future GoobleLab subscription would be separate from Google's Colab plans.
+Free refers to the builder, not included Google compute: this notebook targets an A100, high RAM and roughly 50 GB of storage. Suitable Colab resources and storage are your responsibility and may cost money. A future Nooble subscription would be separate from Google's Colab plans.
 
 See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview, and the [Free/Pro proposal](docs/SAAS.md) for the paid product direction. Live Google authorization and upload remain unverified.
 
@@ -39,7 +41,7 @@ After changing the preset or LoRA source in Step 1, rerun Step 1 and then Steps 
 
 The browser is the primary interface for new work; this optional legacy desktop release remains available.
 
-[Download GoobleLab v0.2.0 for Windows x64](https://github.com/narcisoJavier/GoobleLab/releases/download/v0.2.0/GoobleLab-v0.2.0-windows-x64.zip) · [Release notes](https://github.com/narcisoJavier/GoobleLab/releases/tag/v0.2.0) · [Desktop guide](docs/DESKTOP.md)
+[Download GoobleLab v0.2.0 for Windows x64 (legacy)](https://github.com/narcisoJavier/Nooble/releases/download/v0.2.0/GoobleLab-v0.2.0-windows-x64.zip) · [Release notes](https://github.com/narcisoJavier/Nooble/releases/tag/v0.2.0) · [Desktop guide](docs/DESKTOP.md)
 
 Extract the portable ZIP and run `gooblelab.exe`. The Rust app guides you through **Template → Settings → Export & upload**:
 
@@ -88,7 +90,7 @@ Each generation also saves `workflow_api.json`, which includes the prompt and se
 
 The original FL2VA 8-step notebook generated a video at 864×480 in the author's Colab session. **That clip is the only GPU-validated path so far.** The refactored runner, other presets, custom-LoRA loading, image/reference paths and 1344×768 default have offline checks but still need GPU validation. The desktop exporter and OAuth helpers also have offline checks; live Google sign-in and Drive upload have not yet been tested. Local checks do not establish generation quality, GPU compatibility or end-to-end Google integration.
 
-Please include the selected preset, GPU, settings and relevant log excerpt when reporting an [issue](https://github.com/narcisoJavier/GoobleLab/issues). Remove tokens and private paths before posting logs.
+Please include the selected preset, GPU, settings and relevant log excerpt when reporting an [issue](https://github.com/narcisoJavier/Nooble/issues). Remove tokens and private paths before posting logs.
 
 ## Development
 

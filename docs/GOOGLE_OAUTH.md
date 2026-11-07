@@ -1,5 +1,7 @@
 # Google Drive publishing setup
 
+This documents the legacy v0.2.0 Windows companion, released as **GoobleLab**. **Nooble** is the current project name; the browser is its primary interface.
+
 The GoobleLab desktop app can create a private project folder in your Google Drive, upload a configured notebook and its optional reference image, and open the notebook in Google Colab. Local notebook export works without Google sign-in.
 
 ## One-time Google Cloud setup

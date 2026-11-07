@@ -15,8 +15,8 @@ use std::{
     time::Duration,
 };
 
-const REPO: &str = "https://github.com/narcisoJavier/GoobleLab";
-const NOTEBOOK_URL: &str = "https://colab.research.google.com/github/narcisoJavier/GoobleLab/blob/main/MiniMax_H3_Colab.ipynb";
+const REPO: &str = "https://github.com/narcisoJavier/Nooble";
+const NOTEBOOK_URL: &str = "https://colab.research.google.com/github/narcisoJavier/Nooble/blob/main/MiniMax_H3_Colab.ipynb";
 const INK: Color32 = Color32::from_rgb(23, 32, 31);
 const MUTED: Color32 = Color32::from_rgb(88, 96, 82);
 const RAIL: Color32 = Color32::from_rgb(244, 198, 42);

@@ -1,4 +1,4 @@
-# GoobleLab
+# Nooble
 
 <!-- impeccable:product-schema 1 -->
 
@@ -36,7 +36,7 @@ The existing repository has a working H3 FL2VA eight-step notebook and five cura
 
 ## Brand Commitments
 
-The application and repository are named GoobleLab, spelled G-O-O-B-L-E-L-A-B. The notebook remains central in the product explanation; the browser provides the primary guided interface. Keep visible MiniMax H3 attribution. The user rejected the former yellow browser UI and explicitly requested inspiration from [HackerRank](https://www.hackerrank.com/) and [Eloqwnt](https://www.eloqwnt.com/): calm editorial typography, an airy geometric interface, green/white surfaces and restrained navigation. This reference direction governs the browser; the native Windows companion retains its separate legacy system.
+The application and repository are named Nooble, spelled N-O-O-B-L-E. The notebook remains central in the product explanation; the browser provides the primary guided interface. Keep visible MiniMax H3 attribution. The user rejected the former yellow browser UI and explicitly requested inspiration from [HackerRank](https://www.hackerrank.com/) and [Eloqwnt](https://www.eloqwnt.com/): calm editorial typography, an airy geometric interface, green/white surfaces and restrained navigation. This reference direction governs the browser; the native Windows companion retains its separate legacy system.
 
 ## Evidence on Hand
 

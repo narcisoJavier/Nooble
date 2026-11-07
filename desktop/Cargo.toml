@@ -5,7 +5,7 @@ edition = "2024"
 rust-version = "1.95"
 description = "A native notebook builder for MiniMax H3 on Google Colab"
 license = "MIT"
-repository = "https://github.com/narcisoJavier/GoobleLab"
+repository = "https://github.com/narcisoJavier/Nooble"
 
 [dependencies]
 eframe = { version = "0.37", default-features = false, features = ["default_fonts", "glow", "accesskit"] }
