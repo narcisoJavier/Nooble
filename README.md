@@ -12,7 +12,7 @@ Previously named **GoobleLab**. The v0.2.0 Windows release retains its original 
 
 ## Browser builder preview
 
-[Open Nooble — public web preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Free/Pro product direction](docs/SAAS.md)
+[Open Nooble — public web preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Vercel deployment](docs/WEB.md#deploy-on-vercel) · [Free/Pro product direction](docs/SAAS.md)
 
 Build and serve the browser app from the repository root:
 

@@ -17,6 +17,23 @@ Open [the local builder](http://127.0.0.1:8765/). There are no npm dependencies.
 
 The static build versions linked scripts, styles and notebook resources by content, so a refresh loads the updated builder rather than mixing cached releases.
 
+## Deploy on Vercel
+
+The repository includes `vercel.json` for a static deployment. Use the **repository root** as Root Directory, **Other** as Framework Preset, `node web/build.mjs` as Build Command and `web/dist` as Output Directory. Installation is skipped because the builder has no npm dependencies. The root notebook and preset catalog are required during the build; selecting `web` as Root Directory would leave those inputs outside the project.
+
+For Git deployments, import [narcisoJavier/Nooble](https://github.com/narcisoJavier/Nooble) into the intended Vercel team. For an authenticated CLI deployment, run these from the repository root, replacing `YOUR_TEAM` with that team's slug:
+
+```sh
+vercel link --yes --scope YOUR_TEAM --project nooble
+vercel deploy --prod --scope YOUR_TEAM
+```
+
+The CLI link is stored in ignored `.vercel/`. `.vercelignore` uploads only the builder and its inputs; Vercel serves the generated output directory. Hash navigation needs no catch-all rewrite. CLI deployment alone does not establish automatic Git deployments.
+
+**Hosting plan:** Nooble's planned paid service needs Vercel Pro or Enterprise. Hobby is restricted to noncommercial personal use, and Vercel includes advertising a product or service in its commercial-use definition. Check [Vercel's commercial-use policy](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage) before deploying; repository configuration does not upgrade a plan or authorize billing.
+
+After deployment, check the production URL without signing in, complete a notebook download, and register the exact new HTTPS origin in the Google Web OAuth client's authorized JavaScript origins before trying Drive upload. Saved projects belong to each origin and will not automatically transfer from localhost or the previous host. Keep the existing hosted preview available until the replacement is verified.
+
 ## Build and download a notebook
 
 1. Choose **Template → Settings → Export / upload**. Free lets you edit the name and prompt for text-to-video using FL2VA Turbo 8, 1344×768, a requested 5 seconds and seed `12345`.

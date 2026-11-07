@@ -1,0 +1,12 @@
+# Upload only the static builder and its notebook inputs.
+/*
+!vercel.json
+!MiniMax_H3_Colab.ipynb
+!presets.json
+!web/
+web/dist/
+web/test-*.mjs
+.env
+.env.*
+client_secret*.json
+credentials*.json
