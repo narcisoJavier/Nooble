@@ -8,11 +8,11 @@ Prepare editable **Google Colab** notebooks for AI video generation with sound u
 
 **The notebook is the core output.** The browser builder is Nooble's primary interface for preparing it. All templates and customization controls are free, with no subscription or feature tiers. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
 
-Previously named **GoobleLab**. The v0.2.0 Windows release retains its original ZIP and executable names. Existing browser projects and notebook metadata retain their legacy storage keys for compatibility; the hosted preview URL also stays the same.
+Previously named **GoobleLab**. The v0.2.0 Windows release retains its original ZIP and executable names. Existing browser projects and notebook metadata retain their legacy storage keys for compatibility. The primary website is now hosted on Vercel; the earlier preview remains available during the move.
 
 ## Browser builder preview
 
-[Open Nooble — public web preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Vercel deployment](docs/WEB.md#deploy-on-vercel) · [Project direction](docs/SAAS.md)
+[Open Nooble — free notebook builder](https://nooble.vercel.app) · [Vercel deployment](docs/WEB.md#deploy-on-vercel) · [Project direction](docs/SAAS.md)
 
 Build and serve the browser app from the repository root:
 

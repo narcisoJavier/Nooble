@@ -2,7 +2,7 @@
 
 The browser is Nooble's primary interface. It prepares an editable MiniMax H3 notebook; generation runs in your own Google Colab account. The [core notebook](../MiniMax_H3_Colab.ipynb) also works directly. The [Windows v0.2.0 companion](DESKTOP.md) remains available as an optional legacy interface.
 
-The [hosted preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) is public: anyone can open the builder. Public access was enabled November 8, 2026. This does not implement Nooble subscription accounts or shared project storage. Projects remain local to each browser and origin; projects saved on localhost do not automatically appear on the hosted site.
+The [public Vercel site](https://nooble.vercel.app) was deployed November 8, 2026. Anyone can open the builder, without a Nooble account or subscription. The [earlier hosted preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) remains available during the move. Projects remain local to each browser and origin; projects saved on localhost or the previous host do not automatically appear on the Vercel site.
 
 ## Run locally
 
