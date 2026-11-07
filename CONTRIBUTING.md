@@ -12,7 +12,7 @@ python scripts/check.py
 
 This runs the Python and browser tests, builds the browser, and parses eight exported notebooks covering the five presets and their supported text/image/reference modes. It needs no third-party Python packages, OAuth credentials, GPU or model downloads. The optional Windows companion has separate checks in [the desktop guide](docs/DESKTOP.md).
 
-For browser changes, also inspect Template, Settings, Export, Saved projects and Free/Pro on desktop and mobile. Exercise keyboard navigation, disabled controls and an invalid input. Follow [DESIGN.md](DESIGN.md); do not change the product's facts to fit a visual treatment.
+For browser changes, also inspect Template, Settings, Export, Saved projects and About on desktop and mobile. Exercise keyboard navigation, busy controls and an invalid input. Follow [DESIGN.md](DESIGN.md); do not change the product's facts to fit a visual treatment.
 
 ## Runtime changes and evidence
 

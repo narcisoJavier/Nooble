@@ -4,15 +4,15 @@
 
 Prepare editable **Google Colab** notebooks for AI video generation with sound using open-weight **MiniMax H3** and ComfyUI. Configure text-to-video, first-frame image-to-video or reference-image workflows, five model presets and compatible LoRAs. Generation runs in your own Colab account.
 
-**Status: public builder preview, not a production paid SaaS.** Only the original Turbo 8 workflow at 864×480 has a recorded successful GPU run. The refactored runtime, 1344×768 default, other workflows and live browser Drive integration still need end-to-end validation. [SaaS assessment and launch gates](docs/SAAS.md) · [Contributing and release checks](CONTRIBUTING.md) · [Security reports](SECURITY.md)
+**Status: free, open-source builder preview.** Only the original Turbo 8 workflow at 864×480 has a recorded successful GPU run. The refactored runtime, 1344×768 default, other workflows and live browser Drive integration still need end-to-end validation. [Project direction and validation gates](docs/SAAS.md) · [Contributing and release checks](CONTRIBUTING.md) · [Security reports](SECURITY.md)
 
-**The notebook is the core output.** The browser builder is Nooble's primary interface for preparing it, with a Free basic builder and a Pro customization preview. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
+**The notebook is the core output.** The browser builder is Nooble's primary interface for preparing it. All templates and customization controls are free, with no subscription or feature tiers. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
 
 Previously named **GoobleLab**. The v0.2.0 Windows release retains its original ZIP and executable names. Existing browser projects and notebook metadata retain their legacy storage keys for compatibility; the hosted preview URL also stays the same.
 
 ## Browser builder preview
 
-[Open Nooble — public web preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Vercel deployment](docs/WEB.md#deploy-on-vercel) · [Free/Pro product direction](docs/SAAS.md)
+[Open Nooble — public web preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Vercel deployment](docs/WEB.md#deploy-on-vercel) · [Project direction](docs/SAAS.md)
 
 Build and serve the browser app from the repository root:
 
@@ -21,11 +21,11 @@ node web/build.mjs
 python -m http.server 8765 --bind 127.0.0.1 --directory web/dist
 ```
 
-Open [Nooble locally](http://127.0.0.1:8765/), enter a prompt, and download an editable notebook. Free uses the basic MiniMax H3 text-to-video defaults. **Preview Pro** unlocks image/reference workflows and advanced settings for evaluation; pricing, subscriptions and billing are not enabled. Projects stay in this browser, with no image files or Google tokens persisted.
+Open [Nooble locally](http://127.0.0.1:8765/), choose a text, image or reference workflow, customize its settings, and download an editable notebook. All five model presets, resolution, duration, seed and compatible LoRA controls are available without payment. Projects stay in this browser, with no image files or Google tokens persisted.
 
-Free refers to the builder, not included Google compute: this notebook targets an A100, high RAM and roughly 50 GB of storage. Suitable Colab resources and storage are your responsibility and may cost money. A future Nooble subscription would be separate from Google's Colab plans.
+Free refers to the builder, not included Google compute: this notebook targets an A100, high RAM and roughly 50 GB of storage. Suitable Colab resources and storage are your responsibility and may cost money.
 
-See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview, and the [Free/Pro proposal](docs/SAAS.md) for the paid product direction. Live Google authorization and upload remain unverified.
+See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview and [project direction](docs/SAAS.md) for validation priorities. Voluntary donations may be added later; no donation account is currently connected. Live Google authorization and upload remain unverified.
 
 ## Quick start
 

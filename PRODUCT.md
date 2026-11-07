@@ -16,11 +16,11 @@ People who want to generate media with open-weight MiniMax H3 using a Colab GPU,
 
 ## Product Purpose
 
-Guide users through template → settings → export/upload in a browser. Free prepares a basic MiniMax H3 notebook; the Pro direction sells advanced customization, curated workflows and reusable profiles. Downloads stay editable and open source. Users select their own Colab runtime and run the cells there.
+Guide users through template → settings → export/upload in a browser. Nooble is a free, open-source notebook builder: all templates and customization controls are available without subscriptions or feature tiers. Downloads stay editable. Users select their own Colab runtime and run the cells there.
 
 ## Operating Context
 
-The existing repository has a working H3 FL2VA eight-step notebook and five curated presets. The user chose a browser-first product, with Free basic notebook creation and a paid advanced customization direction. The current Pro toggle is an evaluation preview; there are no accounts, subscriptions, prices or payment enforcement. Optional browser Drive upload uses a user-supplied Web application client ID and authorized JavaScript origin. The legacy desktop flow uses its separate Desktop OAuth configuration.
+The existing repository has an original H3 FL2VA eight-step notebook with one successful GPU run and five curated presets with offline checks. On November 8, 2026, the user retired the subscription proposal in favor of a free, open-source personal project. Voluntary Ko-fi donations may be added later; no donation account is connected. Optional browser Drive upload uses a user-supplied Web application client ID and authorized JavaScript origin. The legacy desktop flow uses its separate Desktop OAuth configuration.
 
 ## Capabilities and Constraints
 
@@ -30,9 +30,9 @@ The existing repository has a working H3 FL2VA eight-step notebook and five cura
 - No Google tokens or local Windows image paths enter exported notebooks.
 - Browser projects retain up to 20 configurations on the device, including image filenames; image files and tokens are not persisted. There is no cloud sync.
 - Browser Google login uses Google Identity Services and the drive.file scope. Tokens stay in page memory. Upload creates a private Drive folder with the notebook and selected image.
-- Free uses text-to-video, FL2VA Turbo 8, 1344×768, requested 5 seconds and seed 12345. Pro preview adds image/reference workflows and advanced controls without charging.
+- Initial defaults are text-to-video, FL2VA Turbo 8, 1344×768, requested 5 seconds and seed 12345. Image/reference workflows, five presets and advanced controls are available to everyone.
 - Runtime control, arbitrary workflow imports, accounts and billing are outside the current browser preview.
-- Runtime availability, model terms and GPU memory constraints apply. Paid launch requires review of Colab terms and the MiniMax H3 license's territory and commercial provisions; see docs/SAAS.md.
+- Runtime availability, model terms and GPU memory constraints apply. Repository licensing does not replace Colab terms or the MiniMax H3 license's territory and use conditions; see docs/SAAS.md.
 
 ## Brand Commitments
 

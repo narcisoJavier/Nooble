@@ -30,18 +30,18 @@ vercel deploy --prod --scope YOUR_TEAM
 
 The CLI link is stored in ignored `.vercel/`. `.vercelignore` uploads only the builder and its inputs; Vercel serves the generated output directory. Hash navigation needs no catch-all rewrite. CLI deployment alone does not establish automatic Git deployments.
 
-**Hosting plan:** Nooble's planned paid service needs Vercel Pro or Enterprise. Hobby is restricted to noncommercial personal use, and Vercel includes advertising a product or service in its commercial-use definition. Check [Vercel's commercial-use policy](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage) before deploying; repository configuration does not upgrade a plan or authorize billing.
+**Hosting plan:** Nooble is a free, open-source personal project with no subscriptions, paid features or product sales. Vercel restricts Hobby to noncommercial personal use and explicitly allows donation requests. Optional voluntary donations are a future possibility; no Ko-fi account is connected. Commercial use would require reassessing the plan under [Vercel's commercial-use policy](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage).
 
 After deployment, check the production URL without signing in, complete a notebook download, and register the exact new HTTPS origin in the Google Web OAuth client's authorized JavaScript origins before trying Drive upload. Saved projects belong to each origin and will not automatically transfer from localhost or the previous host. Keep the existing hosted preview available until the replacement is verified.
 
 ## Build and download a notebook
 
-1. Choose **Template → Settings → Export / upload**. Free lets you edit the name and prompt for text-to-video using FL2VA Turbo 8, 1344×768, a requested 5 seconds and seed `12345`.
-2. **Preview Pro** enables image/reference workflows, five H3 presets, resolution, 4–15 second duration, exact unsigned 64-bit seeds and compatible custom LoRA controls. This is an evaluation toggle: no account, subscription, payment or paid entitlement is active.
+1. Choose **Template → Settings → Export / upload**. Text, first-frame image and reference-image workflows are all free. The initial defaults are FL2VA Turbo 8, 1344×768, a requested 5 seconds and seed `12345`.
+2. Customize the prompt, one of five H3 presets, resolution, 4–15 second duration, exact unsigned 64-bit seed and compatible custom LoRA controls. There are no plan switches, subscriptions or paid features.
 3. Click **Download .ipynb**. In Colab choose **File → Upload notebook**, select **A100 + high RAM**, and run Steps 1–5 in order. The plan shows the actual duration after H3 frame-count rounding; a requested 5 seconds produces about 5.17 seconds.
 4. Finish with Step 6's `STOP_BACKEND`, then disconnect and delete the Colab runtime. See the [main guide](../README.md#quick-start) for compute, storage and output locations.
 
-All exports retain the six editable code cells and Colab form annotations, with execution counts and outputs cleared. Settings remain editable in the notebook regardless of the browser plan. Downloading requires no Google connection in Nooble.
+All exports retain the six editable code cells and Colab form annotations, with execution counts and outputs cleared. Settings remain editable in the notebook. Downloading requires no Google connection in Nooble.
 
 Image and reference workflows accept PNG, JPEG or WebP selections up to 25 MiB. A downloaded notebook includes neither the image nor a device path: Step 5 asks you to upload exactly one image into the Colab runtime. For Ref2VA, refer to it as `<Picture 1>` in your prompt. The experimental Ref2VA Turbo 4 preset was trained at 544p; try 960×544.
 
@@ -87,4 +87,4 @@ Expired sessions require reconnecting. If an upload fails after creating files, 
 node --test web/test-notebook.mjs web/test-drive.mjs
 ```
 
-Offline checks cover clean notebook export, safe prompt quoting, exact maximum seeds, preset/dimension/LoRA validation and mocked Drive requests. They do not establish live OAuth or GPU inference behavior. The commercial direction and launch requirements are in [SAAS.md](SAAS.md).
+Offline checks cover clean notebook export, safe prompt quoting, exact maximum seeds, preset/dimension/LoRA validation and mocked Drive requests. They do not establish live OAuth or GPU inference behavior. Project direction and validation priorities are in [SAAS.md](SAAS.md).
