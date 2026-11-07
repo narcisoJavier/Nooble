@@ -20,7 +20,7 @@ Guide users through template → settings → export/upload in a browser. Nooble
 
 ## Operating Context
 
-The existing repository has an original H3 FL2VA eight-step notebook with one successful GPU run and five curated presets with offline checks. On November 8, 2026, the user retired the subscription proposal in favor of a free, open-source personal project. Voluntary Ko-fi donations may be added later; no donation account is connected. Optional browser Drive upload uses a user-supplied Web application client ID and authorized JavaScript origin. The legacy desktop flow uses its separate Desktop OAuth configuration.
+The existing repository has an original H3 FL2VA eight-step notebook with one successful GPU run and five curated presets with offline checks. On November 8, 2026, the user retired the subscription proposal in favor of a free, open-source personal project. Users can voluntarily explore the maintainer's other repositories and star the ones they like. Stars never gate access; no GitHub sign-in or star verification is needed. No payment or donation account is connected. Optional browser Drive upload uses a user-supplied Web application client ID and authorized JavaScript origin. The legacy desktop flow uses its separate Desktop OAuth configuration.
 
 ## Capabilities and Constraints
 

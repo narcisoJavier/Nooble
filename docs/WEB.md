@@ -30,7 +30,7 @@ vercel deploy --prod --scope YOUR_TEAM
 
 The CLI link is stored in ignored `.vercel/`. `.vercelignore` uploads only the builder and its inputs; Vercel serves the generated output directory. Hash navigation needs no catch-all rewrite. CLI deployment alone does not establish automatic Git deployments.
 
-**Hosting plan:** Nooble is a free, open-source personal project with no subscriptions, paid features or product sales. Vercel restricts Hobby to noncommercial personal use and explicitly allows donation requests. Optional voluntary donations are a future possibility; no Ko-fi account is connected. Commercial use would require reassessing the plan under [Vercel's commercial-use policy](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage).
+**Hosting plan:** Nooble is a free, open-source personal project with no subscriptions, paid features or product sales. The About page and footer invite optional stars on the maintainer's other projects; access never depends on stars or GitHub sign-in. Vercel restricts Hobby to noncommercial personal use and explicitly allows donation requests. No payment or donation account is connected. Commercial use would require reassessing the plan under [Vercel's commercial-use policy](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage).
 
 After deployment, check the production URL without signing in, complete a notebook download, and register the exact new HTTPS origin in the Google Web OAuth client's authorized JavaScript origins before trying Drive upload. Saved projects belong to each origin and will not automatically transfer from localhost or the previous host. Keep the existing hosted preview available until the replacement is verified.
 

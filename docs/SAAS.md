@@ -2,9 +2,9 @@
 
 Updated November 8, 2026. Nooble is a **free, open-source personal project**, with no subscriptions, paid features, sales or advertising. All browser templates and customization controls are available to everyone. This document retains its original filename so existing links continue to work; the earlier SaaS proposal has been retired.
 
-## Funding and hosting
+## Support and hosting
 
-The maintainer may add a voluntary Ko-fi donation link later. No account is connected and there is no donation button yet. Donations must not unlock features or purchase a service in the current project direction.
+Support is voluntary: [explore the maintainer's other projects](https://github.com/narcisoJavier?tab=repositories) and star the ones you find useful. The builder's About page and footer link to this list. Stars do not unlock features; all settings remain free without GitHub sign-in. No stars are verified or added automatically, and no payment or donation account is connected.
 
 Vercel Hobby restricts deployments to noncommercial personal use and explicitly permits asking for donations. See [Vercel's fair-use policy](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage). Reassess hosting before introducing any commercial use. No paid hosting upgrade has been started.
 

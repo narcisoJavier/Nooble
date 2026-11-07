@@ -25,7 +25,7 @@ Open [Nooble locally](http://127.0.0.1:8765/), choose a text, image or reference
 
 Free refers to the builder, not included Google compute: this notebook targets an A100, high RAM and roughly 50 GB of storage. Suitable Colab resources and storage are your responsibility and may cost money.
 
-See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview and [project direction](docs/SAAS.md) for validation priorities. Voluntary donations may be added later; no donation account is currently connected. Live Google authorization and upload remain unverified.
+See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview and [project direction](docs/SAAS.md) for validation priorities. To support the maintainer, [explore the other projects](https://github.com/narcisoJavier?tab=repositories) and star the ones you find useful. Stars are optional; every feature is free without GitHub sign-in. Live Google authorization and upload remain unverified.
 
 ## Quick start
 
