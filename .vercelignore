@@ -3,8 +3,10 @@
 !vercel.json
 !MiniMax_H3_Colab.ipynb
 !presets.json
-!web/
-web/dist/
+!web
+!web/**
+web/dist
+web/dist/**
 web/test-*.mjs
 .env
 .env.*

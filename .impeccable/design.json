@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-07T10:22:27.948542+00:00",
+  "generatedAt": "2026-11-07T16:58:28.929438+00:00",
   "title": "Design System: Nooble",
   "extensions": {
     "colorMeta": {
@@ -174,7 +174,7 @@
       },
       "badge-free": {
         "role": "neutral",
-        "displayName": "Free badge fill",
+        "displayName": "Open-source badge fill",
         "tonalRamp": [
           "oklch(15% 0.0019 160.1)",
           "oklch(25% 0.0031 160.1)",
@@ -188,7 +188,7 @@
       },
       "badge-free-ink": {
         "role": "neutral",
-        "displayName": "Free badge ink",
+        "displayName": "Open-source badge ink",
         "tonalRamp": [
           "oklch(15% 0.0083 158.1)",
           "oklch(25% 0.0134 158.1)",
@@ -202,7 +202,7 @@
       },
       "badge-pro": {
         "role": "neutral",
-        "displayName": "Pro badge fill",
+        "displayName": "Reserved badge fill (legacy token)",
         "tonalRamp": [
           "oklch(15% 0.0060 156.8)",
           "oklch(25% 0.0097 156.8)",
@@ -216,7 +216,7 @@
       },
       "badge-pro-ink": {
         "role": "neutral",
-        "displayName": "Pro badge ink",
+        "displayName": "Reserved badge ink (legacy token)",
         "tonalRamp": [
           "oklch(15% 0.0179 160.1)",
           "oklch(25% 0.0289 160.1)",
@@ -320,7 +320,7 @@
       },
       "page-display": {
         "displayName": "Page display",
-        "purpose": "Saved projects and Free & Pro page headings."
+        "purpose": "Saved projects and About page headings."
       },
       "title": {
         "displayName": "Workspace heading",
@@ -351,8 +351,8 @@
         "purpose": "Visible input labels."
       },
       "badge": {
-        "displayName": "Plan badge",
-        "purpose": "Written Free/Pro status."
+        "displayName": "Project-status badge",
+        "purpose": "Written open-source status."
       },
       "plan-label": {
         "displayName": "Plan label",
@@ -430,7 +430,7 @@
       "name": "Header navigation",
       "kind": "nav",
       "description": "Restrained Manrope route links; the current route is ink with a small green dot.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#builder\" aria-current=\"page\">Builder</a><a href=\"#projects\">Saved projects</a><a href=\"#plans\">Free &amp; Pro</a></nav>",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#builder\" aria-current=\"page\">Builder</a><a href=\"#projects\">Saved projects</a><a href=\"#about\">About</a></nav>",
       "css": ".ds-nav{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:flex;flex-wrap:wrap;gap:30px;padding:18px 0;background:var(--surface,#fff)}.ds-nav a{text-decoration:none;color:var(--muted,#58645d);font-size:13px;font-weight:600;padding:10px 0;position:relative;white-space:nowrap}.ds-nav a[aria-current=page]{color:var(--ink,#17251f)}.ds-nav a[aria-current=page]:after{content:\"\";position:absolute;bottom:1px;left:calc(50% - 2px);width:4px;height:4px;border-radius:50%;background:var(--accent,#235d43)}.ds-nav a:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}"
     },
     {
@@ -445,7 +445,7 @@
       "name": "Geometric workflow radio",
       "kind": "card",
       "description": "Actual text-to-video illustration and semantic radio choice; green selection changes fill and border color without changing thickness.",
-      "html": "<label class=\"ds-workflow\"><span class=\"ds-workflow-top\"><input type=\"radio\" name=\"ds-workflow\" checked><span class=\"ds-free\">Free</span></span><svg class=\"ds-art\" viewBox=\"0 0 180 86\" aria-hidden=\"true\"><path d=\"M21 33h39M21 43h30M21 53h35\"/><path d=\"M77 43h24m-6-5 6 5-6 5\"/><rect x=\"116\" y=\"22\" width=\"46\" height=\"42\" rx=\"5\"/><path d=\"m135 35 12 8-12 8z\"/></svg><span class=\"ds-workflow-copy\"><strong>Text to video</strong><span class=\"ds-description\">Describe a scene, motion and sound. Start with the basic MiniMax H3 notebook.</span></span></label>",
+      "html": "<label class=\"ds-workflow\"><span class=\"ds-workflow-top\"><input type=\"radio\" name=\"ds-workflow\" checked></span><svg class=\"ds-art\" viewBox=\"0 0 180 86\" aria-hidden=\"true\"><path d=\"M21 33h39M21 43h30M21 53h35\"/><path d=\"M77 43h24m-6-5 6 5-6 5\"/><rect x=\"116\" y=\"22\" width=\"46\" height=\"42\" rx=\"5\"/><path d=\"m135 35 12 8-12 8z\"/></svg><span class=\"ds-workflow-copy\"><strong>Text to video</strong><span class=\"ds-description\">Describe a scene, motion and sound. Start with the basic MiniMax H3 notebook.</span></span></label>",
       "css": ".ds-workflow{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:flex;flex-direction:column;padding:18px 16px 22px;background:var(--surface,#fff);border:1px solid var(--border,#cbd5ce);border-radius:var(--radius,14px);color:var(--ink,#17251f);cursor:pointer;min-width:0}.ds-workflow:has(input:checked){border-color:var(--accent,#235d43);background:var(--selected,#edf7f0)}.ds-workflow:has(input:focus-visible){outline:3px solid var(--accent,#235d43);outline-offset:4px;}.ds-workflow:has(input:enabled):hover{border-color:var(--accent,#235d43)}.ds-workflow-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.ds-workflow input{margin:0;accent-color:var(--accent,#235d43);width:17px;height:17px}.ds-art{width:100%;height:auto;max-height:100px;margin:18px 0 20px;stroke:#6c8173;stroke-width:1.3;fill:none;stroke-linecap:round;stroke-linejoin:round}.ds-workflow:has(input:checked) .ds-art{stroke:var(--accent,#235d43)}.ds-workflow strong{font-size:16px;font-weight:750;letter-spacing:-.025em;display:block;margin-bottom:9px}.ds-description{color:var(--muted,#58645d);font-size:13px;display:block;line-height:1.8}.ds-free{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:#e9eeeb;color:#425449}.ds-workflow:has(input:disabled){cursor:default;background:#f0f3f1}.ds-workflow:has(input:disabled) .ds-art{stroke:#86948b}@media(min-width:1500px){.ds-workflow{padding:22px}.ds-workflow strong{font-size:18px}.ds-description{font-size:13px}}@media(max-width:1100px){.ds-workflow{display:grid;grid-template-columns:80px minmax(0,1fr) 55px;align-items:center;gap:14px;padding:18px}.ds-workflow-top{grid-column:3;grid-row:1;flex-direction:column;gap:10px}.ds-art{grid-column:1;grid-row:1;margin:0}.ds-workflow-copy{grid-column:2;grid-row:1}.ds-workflow strong{margin-bottom:3px}.ds-description{font-size:12px}}@media(max-width:760px){.ds-workflow{grid-template-columns:75px minmax(0,1fr) 44px;gap:14px;padding:17px}.ds-workflow strong{font-size:16px}.ds-description{font-size:12px;line-height:1.7}.ds-free{font-size:10px;padding:2px 7px}}@media(max-width:450px){.ds-workflow{grid-template-columns:54px minmax(0,1fr) 36px;gap:10px;padding:16px 12px}.ds-workflow strong{font-size:15px}.ds-art{width:62px;margin-left:-4px}.ds-free{font-size:10px;padding:2px 6px}}@media(prefers-reduced-motion:no-preference){.ds-workflow{transition:background-color 150ms ease,border-color 150ms ease}}",
       "refersTo": "workflow-selected"
     },
@@ -458,18 +458,18 @@
       "refersTo": "notebook-plan"
     },
     {
-      "name": "Pro preview badge",
+      "name": "Open-source badge",
       "kind": "chip",
-      "description": "Noninteractive pale green pill, explicitly labelled as a preview.",
-      "html": "<span class=\"ds-pro\">Pro preview</span>",
-      "css": ".ds-pro{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:#dcebe1;color:#28543e;vertical-align:middle;white-space:nowrap}",
-      "refersTo": "badge-pro"
+      "description": "Noninteractive muted pill identifying the project as open source.",
+      "html": "<span class=\"ds-badge\">Open source</span>",
+      "css": ".ds-badge{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:#e9eeeb;color:#425449;vertical-align:middle;white-space:nowrap}",
+      "refersTo": "badge-free"
     },
     {
-      "name": "Header preview action",
+      "name": "Header source action",
       "kind": "button",
-      "description": "Ink-filled pill used for the preview entry; forest hover keeps it distinct from the main work action.",
-      "html": "<button class=\"ds-preview\">Preview Pro</button>",
+      "description": "Ink-filled source link with a forest hover, distinct from the main work action.",
+      "html": "<a class=\"ds-preview\" href=\"https://github.com/narcisoJavier/Nooble\" target=\"_blank\" rel=\"noopener noreferrer\">Source code</a>",
       "css": ".ds-preview{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 20px;border:1px solid var(--border,#cbd5ce);border-radius:8px;font-size:13px;font-weight:700;line-height:1.5;cursor:pointer;text-decoration:none;min-height:40px;padding:10px 18px;font-size:11px;border-radius:24px;background:var(--ink,#17251f);color:white;border-color:var(--ink,#17251f)}.ds-preview:hover{background:var(--accent,#235d43)}.ds-preview:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}.ds-preview:disabled{background:#e2e8e3;color:#67736a;border-color:#d1dbd4;cursor:not-allowed;}@media(prefers-reduced-motion:no-preference){.ds-preview{transition:background-color 150ms ease,border-color 150ms ease}}"
     }
   ],
@@ -485,7 +485,7 @@
     "rules": [
       {
         "name": "The Written State Rule",
-        "body": "Color supports a visible radio, a current-step number, text or a disabled control; it never carries plan availability or an error by itself.",
+        "body": "Color supports a visible radio, a current-step number, text or a disabled control; it never carries availability or an error by itself.",
         "section": "colors"
       },
       {
@@ -504,7 +504,7 @@
       "Do keep serif scale in editorial headings and task controls in Manrope.",
       "Do preserve the top stepper, visible radio state and keyboard focus treatment.",
       "Do follow the implemented breakpoints and let the plan flow below the workspace on mobile.",
-      "Do show Free restrictions, Pro preview status and Colab execution in text.",
+      "Do state that all supported workflows and customization settings are free and that generation runs in the user's Colab account.",
       "Do describe projects as device-local and require image reselection when the file is no longer in memory."
     ],
     "donts": [

@@ -7,7 +7,7 @@ related_targets: ["web/style.css", "web/app.mjs"]
 
 # Browser notebook builder
 
-Mode: Operate. Nooble is a browser-first notebook builder with Free basic notebooks and a Pro customization evaluation preview. Preserve the Template → Settings → Export/upload task and all product truth while replacing the rejected yellow browser visual world.
+Mode: Operate. Nooble is a free, open-source browser notebook builder with all supported workflows and customization settings included. Preserve the Template → Settings → Export/upload task and the existing cool green browser visual world.
 
 ## Direction contract
 
@@ -29,4 +29,4 @@ The direction assignment `seed:16f92d57ad20dc07` is acknowledged. The user's exp
 
 ## Functional scope
 
-Notebook download and browser-local projects work. Pro is a no-charge customization preview. Google uses a Web OAuth client and memory-only tokens; live authorization/upload is unverified. Accounts, cloud sync, subscriptions and billing are not implemented. The app configures editable notebooks and does not resell Colab compute. Projects retain up to 20 configurations on this device; image files and Google tokens are not persisted.
+Notebook download and browser-local projects work. Text, image and reference workflows, model presets, resolution, duration, seed and compatible LoRA settings are free to configure. About replaces the former plan comparison; `#plans` remains an alias for compatibility. The header links to the source repository. Google uses a Web OAuth client and memory-only tokens; live authorization/upload is unverified. Accounts, cloud sync, subscriptions and billing are not implemented. The app configures editable notebooks and does not resell Colab compute. Projects retain up to 20 configurations on this device; image files and Google tokens are not persisted. A voluntary Ko-fi link is a future option; none is configured.

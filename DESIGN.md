@@ -174,31 +174,31 @@ Forest green provides action and selection emphasis; cool neutrals and muted min
 ### Primary
 
 - **Forest green** (`accent`): primary actions, links, workflow selection borders, checked radios and keyboard focus.
-- **Deep forest hover** (`primary-hover`): primary button hover. The header preview action instead begins in ink and turns forest on hover.
+- **Deep forest hover** (`primary-hover`): primary button hover. The header Source code action instead begins in ink and turns forest on hover.
 
 ### Neutral
 
 - **Cool ground** (`ground`) and **white surface** (`surface`): the page and interactive workflow surfaces.
-- **Mint plan** (`summary`): notebook summary and the Pro comparison offering.
+- **Mint plan** (`summary`): notebook summary.
 - **Selection mint** (`selected`): checked workflow fill, paired with its visible radio and forest border.
-- **Green-black ink** (`ink`): headings, values, current step number and header preview action.
+- **Green-black ink** (`ink`): headings, values, current step number and header Source code action.
 - **Sage gray** (`muted`) and **plan green-gray** (`plan-ink`): supporting copy and plan labels/help.
 - **Soft outline** (`border`) and **hover mint** (`hover`): field/workflow separation and secondary action hover.
-- **Free / Pro badge fills and inks** (`badge-free`, `badge-free-ink`, `badge-pro`, `badge-pro-ink`): small written plan labels with restrained tonal differences.
+- **Open-source badge fill and ink** (`badge-free`, `badge-free-ink`): small written project-status labels. The `badge-pro` and `badge-pro-ink` token names remain as legacy styling references; they do not represent a paid tier.
 - **Disabled surface and text tokens**: distinguish unavailable workflow, button and field states while retaining readable labels.
 
 **Error red** (`error`) is reserved for validation failures and error toasts.
 
-**The Written State Rule.** Color supports a visible radio, a current-step number, text or a disabled control; it never carries plan availability or an error by itself.
+**The Written State Rule.** Color supports a visible radio, a current-step number, text or a disabled control; it never carries availability or an error by itself.
 
 ## Typography
 
 **Display font:** Instrument Serif (Georgia, serif fallback), regular only. **Interface font:** Manrope (Segoe UI, sans-serif fallback), variable weights 200–800. Both fonts are self-hosted under `web/fonts/` with their OFL license files and use `font-display: swap`.
 
-The serif is used for the builder welcome, full-page headings and comparison status/price. All task headings, descriptions, editable values, labels and actions use Manrope. The browser no longer uses Georgia for routine guidance.
+The serif is used for the builder welcome and full-page headings. All task headings, descriptions, editable values, labels and actions use Manrope. The browser no longer uses Georgia for routine guidance.
 
 - **Display:** responsive welcome heading, with the second line in forest green. It appears on Template only; Settings and Export hide the welcome block to bring controls upward. At the mobile and small breakpoints its sizes become 51px and 47px.
-- **Page display:** Saved projects and Free & Pro headings, reduced to 45px at the mobile breakpoint.
+- **Page display:** Saved projects and About headings, reduced to 45px at the mobile breakpoint.
 - **Title:** compact workspace heading, reduced to 24px on mobile.
 - **Body / intro:** the document base and focused supporting paragraphs. Introductions stay within 70ch; quiet explanatory text within 75ch.
 - **Workflow title / description:** bold sans-serif title above readable supporting copy. Wide-screen titles increase to 18px. Descriptions are 13px by default and 12px at compact/mobile sizes.
@@ -211,18 +211,18 @@ The serif is used for the builder welcome, full-page headings and comparison sta
 
 The desktop browser uses a centered container (1440px maximum) with 44px top, 32px horizontal and 56px bottom padding. A welcome row and bordered horizontal stepper span the container. Below, the flexible workspace and 286px notebook plan form two columns with a 48px gap. Settings and Export omit the welcome row. The browser uses normal document scrolling, with no independent native pane scrollers or sticky plan.
 
-Workflow choices form three equal columns with 12px gaps at the default desktop size. Settings pair compatible fields in two columns. The action row wraps below a fine divider. Secondary pages use an 1180px maximum container, a horizontally scrollable project table, and two comparison offerings.
+Workflow choices form three equal columns with 12px gaps at the default desktop size. Settings pair compatible fields in two columns. The action row wraps below a fine divider. Secondary pages use an 1180px maximum container, a horizontally scrollable project table, and a readable About section.
 
 - **1500px minimum:** column gap increases to 64px and plan width to 320px. Workflow padding becomes 22px; plan padding becomes 30px.
 - **1100px maximum:** the plan narrows to 250px and the column gap to 28px. Container padding becomes 35px 26px 45px. Workflow choices become one vertical list of horizontal rows, with illustration, copy and radio/badge columns. The stepper's extra note is hidden.
-- **760px maximum:** navigation wraps into a second header row; the builder becomes one column with 30px 22px 40px padding. The plan follows the workspace, with two-column facts and actions. Step connectors disappear, workflow rows stay horizontal, page headings/actions stack, and comparison offerings become one column.
-- **450px maximum:** horizontal gutters reduce to 18px; paired fields and plan actions become one column. Workflow illustration/copy/control columns tighten, input text increases to 16px, image selection stacks, and the small account plan badge is hidden while the preview action stays visible.
+- **760px maximum:** navigation wraps into a second header row; the builder becomes one column with 30px 22px 40px padding. The plan follows the workspace, with two-column facts and actions. Step connectors disappear, workflow rows stay horizontal, and page headings/actions stack.
+- **450px maximum:** horizontal gutters reduce to 18px; paired fields and plan actions become one column. Workflow illustration/copy/control columns tighten, input text increases to 16px, image selection stacks, and the small header Open source badge is hidden while the Source code action stays visible.
 
 Use these actual CSS breakpoints. A screenshot's physical dimensions do not determine its browser viewport breakpoint.
 
 ## Elevation & Depth
 
-Surfaces stay flat. Mint/white fills, fine borders and open space separate the notebook plan, workflow choices, fields and comparison offerings. The only shipping shadow is the fixed status toast (`0 8px 28px #17251f26`), with ink fill for ordinary status and error red for failures.
+Surfaces stay flat. Mint/white fills, fine borders and open space separate the notebook plan, workflow choices and fields. The only shipping shadow is the fixed status toast (`0 8px 28px #17251f26`), with ink fill for ordinary status and error red for failures.
 
 When `prefers-reduced-motion: no-preference` matches, buttons and workflow choices transition background/border colors over 150ms with `ease`. Toast entry combines an 8px upward translation and clip reveal over 180ms using `cubic-bezier(.16,1,.3,1)`. The reduced-motion path has no added entry animation or color transitions.
 
@@ -230,7 +230,7 @@ When `prefers-reduced-motion: no-preference` matches, buttons and workflow choic
 
 ## Shapes
 
-The form language is softly rounded and geometrically simple: 8px controls, 14px workflow choices, 16px plan/comparison surfaces, 20px plan badges and a 24px header preview action. Step numbers are circular. Workflow selection changes its one-pixel border color and fill without changing thickness or occupied size.
+The form language is softly rounded and geometrically simple: 8px controls, 14px workflow choices, a 16px notebook plan, 20px status badges and a 24px header Source code action. Step numbers are circular. Workflow selection changes its one-pixel border color and fill without changing thickness or occupied size.
 
 Inline SVG workflow illustrations use thin, rounded geometric strokes. The notebook brand mark combines a dark rounded square and a pale mint line icon. These images identify workflow and product; they do not replace labels. Keyboard-visible focus uses a 3px forest outline with a 4px offset, including around a focused workflow label.
 
@@ -238,27 +238,27 @@ Inline SVG workflow illustrations use thin, rounded geometric strokes. The noteb
 
 ### Buttons
 
-Primary actions use forest green, white text and a small CSS chevron. Secondary actions use a white fill, ink and a soft outline. Both have an 8px radius, 10px 20px padding and a 44px minimum height. Small actions are at least 40px high. The header preview action is a separate ink-filled pill. Text actions remain underlined and at least 44px high. Disabled buttons use explicit muted fill, text and border colors; busy Drive work disables the relevant controls.
+Primary actions use forest green, white text and a small CSS chevron. Secondary actions use a white fill, ink and a soft outline. Both have an 8px radius, 10px 20px padding and a 44px minimum height. Small actions are at least 40px high. The header Source code link is a separate ink-filled pill. Text actions remain underlined and at least 44px high. Disabled buttons use explicit muted fill, text and border colors; busy Drive work disables the relevant controls.
 
 ### Inputs / Fields
 
-Labels sit above full-width inputs, selects and textareas with an 8px radius, soft border, white fill, 12px 14px padding and a 46px minimum height. Prompt textareas begin at 185px and resize vertically. Hover strengthens the outline; focus uses the shared visible ring. Disabled generation controls remain visible with a muted fill and written Free/Pro explanation. Validation errors use text and an alert region.
+Labels sit above full-width inputs, selects and textareas with an 8px radius, soft border, white fill, 12px 14px padding and a 46px minimum height. Prompt textareas begin at 185px and resize vertically. Hover strengthens the outline; focus uses the shared visible ring. All supported generation settings are available without a tier toggle. Validation errors use text and an alert region.
 
 ### Navigation
 
-The restrained white header contains Builder, Saved projects and Free & Pro links. Current navigation uses ink and a small green dot. The horizontal Template → Settings → Export / upload stepper uses numbered circles, fine desktop connectors and a dark filled current number. Step controls remain present during configuration. Validation gates entry to Export; changing steps moves keyboard focus to the workspace.
+The restrained white header contains Builder, Saved projects and About links, with an Open source badge and Source code link. The former `#plans` route opens About for compatibility. Current navigation uses ink and a small green dot. The horizontal Template → Settings → Export / upload stepper uses numbered circles, fine desktop connectors and a dark filled current number. Step controls remain present during configuration. Validation gates entry to Export; changing steps moves keyboard focus to the workspace.
 
 ### Workflow choices
 
-Three semantic radio labels present Text to video, Image to video and Reference to video, each with a geometric SVG, sans-serif title/description and written Free/Pro badge. Checked radios use selection mint and a forest border. Free enables text-to-video and visibly disables the two Pro workflows. The responsive list shifts from three upright choices to horizontal rows rather than shrinking the copy into narrow columns.
+Three semantic radio labels present Text to video, Image to video and Reference to video, each with a geometric SVG and sans-serif title/description. All three workflows are free to select. Checked radios use selection mint and a forest border. The responsive list shifts from three upright choices to horizontal rows rather than shrinking the copy into narrow columns.
 
 ### Notebook plan
 
 A rounded mint panel keeps the current workflow, preset, frame-adjusted duration, dimensions, runtime, image filename and LoRA state in view beside the workspace. Label/value rows align across the desktop panel, then become a two-column fact grid beneath the workspace on mobile. Save project and Open core notebook use transparent panel buttons. The plan explicitly locates GPU execution in the user's Colab account.
 
-### Plan badges and comparison
+### Open-source badges and About
 
-Free and Pro badges are small muted pills. The Pro state says preview and includes a written no-billing notice. The Free & Pro page pairs white and mint rounded offerings: Free is $0; Pro says Preview available. It does not quote a paid subscription price or collect payment.
+Small muted pills identify the project as Open source or Free & open source. About explains that all templates and customization settings are included, projects stay in this browser, and compute uses the user's Colab account. It links to the source, model license and Colab terms. There are no subscription tiers or payment controls.
 
 ### Status, projects and handoff
 
@@ -274,7 +274,7 @@ Notebook download and Google Drive upload remain separate paths. The export scre
 - Do keep serif scale in editorial headings and task controls in Manrope.
 - Do preserve the top stepper, visible radio state and keyboard focus treatment.
 - Do follow the implemented breakpoints and let the plan flow below the workspace on mobile.
-- Do show Free restrictions, Pro preview status and Colab execution in text.
+- Do state that all supported workflows and customization settings are free and that generation runs in the user's Colab account.
 - Do describe projects as device-local and require image reselection when the file is no longer in memory.
 
 ### Don't:
