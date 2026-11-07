@@ -4,7 +4,7 @@
 
 Prepare editable **Google Colab** notebooks for AI video generation with sound using open-weight **MiniMax H3** and ComfyUI. Configure text-to-video, first-frame image-to-video or reference-image workflows, five model presets and compatible LoRAs. Generation runs in your own Colab account.
 
-**Status: private product preview, not a production paid SaaS.** Only the original Turbo 8 workflow at 864×480 has a recorded successful GPU run. The refactored runtime, 1344×768 default, other workflows and live browser Drive integration still need end-to-end validation. [SaaS assessment and launch gates](docs/SAAS.md) · [Contributing and release checks](CONTRIBUTING.md) · [Security reports](SECURITY.md)
+**Status: public builder preview, not a production paid SaaS.** Only the original Turbo 8 workflow at 864×480 has a recorded successful GPU run. The refactored runtime, 1344×768 default, other workflows and live browser Drive integration still need end-to-end validation. [SaaS assessment and launch gates](docs/SAAS.md) · [Contributing and release checks](CONTRIBUTING.md) · [Security reports](SECURITY.md)
 
 **The notebook is the core output.** The browser builder is Nooble's primary interface for preparing it, with a Free basic builder and a Pro customization preview. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
 
@@ -12,7 +12,7 @@ Previously named **GoobleLab**. The v0.2.0 Windows release retains its original 
 
 ## Browser builder preview
 
-[Hosted preview (owner-private, ChatGPT sign-in)](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Free/Pro product direction](docs/SAAS.md)
+[Open Nooble — public web preview](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Free/Pro product direction](docs/SAAS.md)
 
 Build and serve the browser app from the repository root:
 

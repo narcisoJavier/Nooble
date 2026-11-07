@@ -1,6 +1,6 @@
 # Nooble SaaS readiness
 
-Reviewed November 7, 2026. **Current decision: suitable for a private product preview; not ready to accept subscriptions.** This is an engineering and product assessment, not legal clearance. The browser and editable notebooks work as a configuration tool; a production SaaS remains to be built and validated.
+Assessment reviewed November 7, 2026; publication status updated November 8, 2026. **Current status: public builder preview; not ready to accept subscriptions.** This is an engineering and product assessment, not legal clearance. The browser and editable notebooks work as a configuration tool; a production SaaS remains to be built and validated.
 
 ## What we should sell
 
@@ -15,7 +15,7 @@ Free means no Nooble charge. It does **not** mean free A100 access, free Drive s
 | Gap | Evidence and consequence | Next action |
 | --- | --- | --- |
 | Generation promise exceeds evidence | Only the original FL2VA Turbo 8 path at 864×480 has a recorded successful GPU run. The refactored runtime and 1344×768 default are not GPU-validated. | Verify the actual exported notebook before marketing its defaults as reliable. Keep other paths experimental until measured. |
-| Onboarding is for developers | The hosted preview is owner-private. Drive upload asks each customer to create a Google Cloud OAuth application. | Keep download available now; for public upload, configure one operator-owned production OAuth app and a domain the operator controls. |
+| Onboarding is for developers | The builder is publicly accessible, but Drive upload still asks each customer to create a Google Cloud OAuth application. | Keep download available now; for public upload, configure one operator-owned production OAuth app and a domain the operator controls. |
 | Pro is only a demonstration | Plan state lives in browser JavaScript. No accounts, subscriptions or server authorization exist. | Keep the explicit no-charge preview. Add a server entitlement check only when introducing paid server features. |
 | Recurring value is unproven | Current value is mainly editing settings before downloading an open notebook. | Observe repeat use and willingness to pay before choosing a subscription price. |
 | Portability and privacy need clarity | Projects live only in browser storage. Notebooks and workflow JSON include prompts. Drive uploads and outputs outlive a local project. | Explain storage/cleanup; retain notebook export. Add account export/deletion and ownership enforcement with any future cloud storage. |
@@ -29,7 +29,7 @@ Free means no Nooble charge. It does **not** mean free A100 access, free Drive s
 
 The [MiniMax H3 license](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE) excludes the EU, UK, Republic of Korea and US from its default territory, requires commercial attribution, and has an additional authorization threshold above US$20 million yearly revenue. Resolve applicability to the intended customers, distribution and hosting before public paid launch. Repository MIT licensing is separate; do not assume a notebook-only product automatically avoids model conditions.
 
-For public Google integration, use separate test/production projects, secure origins, an owned verified domain, a public home page and an accurate privacy policy. Scope/brand verification depends on the app's configuration. `drive.file` is Google's recommended non-sensitive per-file scope; it does not mean all production requirements disappear. The owner-private preview is not a production OAuth home page. Sources: [Google production OAuth policy](https://developers.google.com/identity/protocols/oauth2/production-readiness/policy-compliance), [Drive scopes](https://developers.google.com/workspace/drive/api/guides/api-specific-auth).
+For public Google integration, use separate test/production projects, secure origins, an owned verified domain, a public home page and an accurate privacy policy. Scope/brand verification depends on the app's configuration. `drive.file` is Google's recommended non-sensitive per-file scope; it does not mean all production requirements disappear. Making the preview public does not itself satisfy production OAuth requirements. Sources: [Google production OAuth policy](https://developers.google.com/identity/protocols/oauth2/production-readiness/policy-compliance), [Drive scopes](https://developers.google.com/workspace/drive/api/guides/api-specific-auth).
 
 ## Smallest professional architecture
 
@@ -68,7 +68,7 @@ Record evidence with release/commit, GPU and memory, package versions, preset, d
 
 ## Order of work
 
-1. **Validate the notebook first.** Complete the current-default GPU and live Drive gates. Capture the working environment and failure recovery. Until then, stay a private preview without checkout.
+1. **Validate the notebook first.** Complete the current-default GPU and live Drive gates. Capture the working environment and failure recovery. The current public builder preview has no checkout; do not enable payments before these gates pass.
 2. **Run a small pilot.** Proposed starting cohort: five independent users who have suitable Colab access and permission to use the model. Observe template selection → download/upload → first playable video. Record where they need help and whether they return for a second project. This is a proposed study, not existing traction.
 3. **Prepare public onboarding.** Decide the operator/customer territory, domain, support contact, privacy/service terms, production OAuth configuration and honest compute requirements. These require owner decisions; no domain purchase or public access change is assumed.
 4. **Build one paid benefit.** Choose the recurring need demonstrated by the pilot, then add managed authentication, a minimal project/entitlement API and payment integration. Test the complete lifecycle in sandbox before enabling live charges.
