@@ -27,6 +27,10 @@ Free refers to the builder, not included Google compute: this notebook targets a
 
 See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview and [project direction](docs/SAAS.md) for validation priorities. To support the maintainer, [explore the other projects](https://github.com/narcisoJavier?tab=repositories) and star the ones you find useful. Stars are optional; every feature is free without GitHub sign-in. Live Google authorization and upload remain unverified.
 
+## Colab output limits
+
+Nooble imposes no daily video quota. Your own Colab account's compute units, available GPU, session limits, memory and storage determine how many clips you can generate. A free builder does not mean unlimited Google compute. Rerun Step 5 for more clips while the backend is running; save your outputs before ending the runtime. See [Colab limits and generating more clips](docs/WEB.md#colab-limits-and-generating-more-clips).
+
 ## Quick start
 
 1. Open the notebook above and save a copy to your Drive.

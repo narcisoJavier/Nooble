@@ -47,6 +47,23 @@ Image and reference workflows accept PNG, JPEG or WebP selections up to 25 MiB. 
 
 Custom LoRAs must match the selected H3 family. Use an HTTPS Hugging Face `.safetensors` file URL or `/content/drive/MyDrive/...` path, with strength from 0 to 2. Put private download credentials in Colab's `HF_TOKEN` secret. URLs with credentials, tokens or traversal are rejected.
 
+## Colab limits and generating more clips
+
+Nooble does not impose a daily video quota. The notebook runs generation in your own Colab account, so its resources determine your practical output count.
+
+- **Compute budget:** paid compute units can run out and end the session. GPU access and hardware availability vary, including on paid plans.
+- **Session limits:** idle timeouts and maximum runtime lifetimes apply. Longer access is not a guarantee of uninterrupted generation.
+- **Clip settings:** higher resolution, longer duration and more sampling steps generally require more compute. Larger jobs can also exceed memory capacity.
+- **Hardware and storage:** this notebook targets A100 + high RAM and roughly 50 GB for setup. Model caches and generated clips need enough runtime or Drive space. Do not assume free Colab can supply the required hardware.
+
+Google sets Colab's resource policies; they can change. Check [Google's current resource limits](https://research.google.com/colaboratory/faq.html#resource-limits). Nooble does not include Google compute or guarantee a particular GPU.
+
+After setup, keep the backend running and rerun **Step 5** for each new clip. If the backend stopped, rerun Step 4 and wait for readiness first. Reusing the runtime avoids repeating setup for each clip. Shorter clips, smaller supported resolutions and a compatible Turbo preset can reduce the work per generation, but do not guarantee a fixed output count.
+
+For a rough session estimate, divide usable GPU time remaining **after setup** by your measured time per clip. There is no published Nooble output-count benchmark; generation time depends on the allocated hardware and settings.
+
+Save clips to Drive or download them before deleting a temporary runtime. When finished, enable `STOP_BACKEND` and run Step 6, then choose **Runtime → Disconnect and delete runtime** in Colab. Step 6 stops the backend; it does not itself disconnect or release the Colab runtime.
+
 ## Saved projects and privacy
 
 **Save project** keeps up to 20 configurations in this browser's local storage. Records contain names, prompts, settings and the selected image's filename. Image files, OAuth client IDs and Google access tokens are not saved with projects. Reselect an image before a Drive upload after reopening a project; downloaded notebooks can still ask for it inside Colab.
